@@ -18,3 +18,28 @@
 # 4. Das Programm führt die Berechnung durch und gibt das Ergebnis aus.
 
 # Optional: Erweitern Sie den Taschenrechner um weitere Funktionen wie Potenzierung oder Modulo.
+
+
+# Zahl1:
+z1 = input(f"Enter number 1: ")
+z1 = float(z1)
+
+# Zahl2:
+z2 = input(f"Enter number 2: ")
+z2 = float(z2)
+
+op = ''
+while op not in "+-*/" or len(op)!=1:
+    # Operand:
+    op = input(f"Enter operation [+-*/]: ")
+
+
+match op:
+    case '+':
+        print(f"{z1} + {z2} = {z1+z2}")
+    case '-':
+        print(f"{z1} - {z2} = {z1-z2}")
+    case '*':
+        print(f"{z1} * {z2} = {z1*z2}")
+    case '/':
+        print(f"{z1} / {z2} = {z1/z2}")
